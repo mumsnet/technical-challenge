@@ -63,7 +63,9 @@ The endpoint is a `GET` request to `/collectors/{id}/recently-added`.
 The structure of the returned data is up to you, but should be valid JSON.
 
 # Submissions
-To submit your challenge, fork this repo to a new private repository in your GitHub account.
+To submit your challenge, clone this repo and push it to a new private repository in your GitHub account.
+
+Then checkout a new branch, and complete the challenge on that branch.
 
 Once you have completed it and would like us to review it, please add the following users to the repo:
 
