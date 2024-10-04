@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Schema;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,8 +27,10 @@ pest()->extend(Tests\TestCase::class, RefreshDatabase::class);
 |
 */
 
-expect()->extend('toBeOne', function () {
-    return $this->toBe(1);
+expect()->extend('toHaveColumns', function (array $columns) {
+    expect(Schema::hasColumns($this->value, $columns))->toBeTrue();
+
+    return $this;
 });
 
 /*

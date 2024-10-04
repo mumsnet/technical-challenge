@@ -29,9 +29,7 @@ arch('Models')
     ->ignoring('App\Models\Concerns');
 
 arch('Ensure factories', function () {
-    expect($models = getModels())->toHaveCount(1);
-
-    foreach ($models as $model) {
+    foreach (getModels() as $model) {
         /* @var \Illuminate\Database\Eloquent\Factories\HasFactory $model */
         expect($model::factory())
             ->toBeInstanceOf(Illuminate\Database\Eloquent\Factories\Factory::class);
@@ -39,9 +37,7 @@ arch('Ensure factories', function () {
 });
 
 arch('Ensure DateTime Casts', function () {
-    expect($models = getModels())->toHaveCount(1);
-
-    foreach ($models as $model) {
+    foreach (getModels() as $model) {
         /* @var \Illuminate\Database\Eloquent\Factories\HasFactory $model */
         $instance = $model::factory()->create();
 
