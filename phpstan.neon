@@ -6,6 +6,11 @@ parameters:
 
     level: max
 
+    ignoreErrors:
+        -
+            message: '#Property Client_IsbnClient\:\:\$[a-zA-Z]* is never read, only written.#'
+            path: app/Client/IsbnClient.php
+
     paths:
         - app
         - bootstrap
