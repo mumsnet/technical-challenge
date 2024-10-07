@@ -2,11 +2,13 @@
 
 declare(strict_types=1);
 
+namespace App\Client;
+
 use Illuminate\Support\Sleep;
 use Illuminate\Support\Str;
 use Ramsey\Uuid\UuidInterface;
 
-final class Client_IsbnClient
+final class IsbnClient
 {
     public function __construct(
         private string $username,
