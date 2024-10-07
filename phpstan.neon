@@ -16,4 +16,3 @@ parameters:
         - bootstrap
         - database/factories
         - routes
-        - tests
