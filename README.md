@@ -77,5 +77,7 @@ Then checkout a new branch, and complete the challenge on that branch.
 Once you have completed it and would like us to review it, please add the following users to the repo:
 
 - mdavis1982
+- rieves
+- WilliamJGrace
 
 Good luck!
